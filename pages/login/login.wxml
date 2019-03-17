@@ -1,0 +1,3 @@
+<view>
+  <button bindtap='loginOk'>登录成功</button>
+</view>

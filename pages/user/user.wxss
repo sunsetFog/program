@@ -1,0 +1,21 @@
+.wrapper{
+  width: 100%;
+  background: skyblue
+}
+.pic{
+  width: 100%;
+  height: 400rpx;
+}
+.btn{
+  width: 400rpx;
+  color: #fff;
+  background: salmon
+}
+.btn-active{
+  background: green;
+}
+input{
+  height: 100rpx;
+  background: seagreen;
+  border: 1px solid grey;
+}

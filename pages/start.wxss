@@ -1,0 +1,4 @@
+/* pages/start.wxss */
+.my{
+  color: orange;
+}

@@ -1,0 +1,10 @@
+<!--pages/main/main.wxml-->
+<view class='wrapper'>
+  <slot name="before"></slot>
+  <button type='primary' bindtap='passOn'>
+    引用自定义组件
+  </button>
+  <!-- slot子节点容器 -->
+  <!-- <slot></slot> -->
+  <slot name="after"></slot>
+</view>

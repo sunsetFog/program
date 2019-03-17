@@ -1,0 +1,55 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/start",
+    "pages/cloud/cloud",
+    "pages/user/user",
+    "pages/main/main",
+    "pages/next/next",
+    "pages/index/index",
+    "pages/video/video",
+    "pages/text/text",
+    "pages/zoo/zoo",
+    "pages/date/date",
+    "pages/login/login",
+    "pages/logs/logs",
+    "plugin/components/hello-component",
+    "plugin/pages/hello-page"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "夕阳红雾",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "black",
+    "selectedColor": "red",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/images/home.png",
+        "selectedIconPath": "pages/images/selecthome.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "pages/images/log.png",
+        "selectedIconPath": "pages/images/selectedLog.png"
+      },
+      {
+        "pagePath": "pages/start",
+        "text": "我的",
+        "iconPath": "pages/images/mine.png",
+        "selectedIconPath": "pages/images/selectedMine.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,6 @@
+<!--pages/zanshi/zanshi.wxml-->
+<button open-type="getUserInfo" bindgetuserinfo="yahoo">授权登录</button>
+<button type='primary' bindtap='bingo'>新增</button>
+<button type='primary' bindtap='look'>查看</button>
+<button type='primary' bindtap='modify'>修改</button>
+<button type='primary' bindtap='deletes'>删除</button>
