@@ -1,0 +1,11 @@
+<!--logs.wxml-->
+<view>
+  <van-tree-select
+    items="{{ list }}"
+    height="500px"
+    main-active-index="{{ activeIndex }}"
+    active-id="{{ activeId }}"
+    bind:click-nav="theFirst"
+    bind:click-item="theSecond"
+  />
+</view>

@@ -1,21 +1,26 @@
 {
   "cloud": true,
   "pages": [
+    "pages/tree/tree",
     "pages/start",
     "pages/cloud/cloud",
     "pages/user/user",
-    "pages/main/main",
-    "pages/next/next",
     "pages/index/index",
-    "pages/video/video",
-    "pages/text/text",
     "pages/zoo/zoo",
-    "pages/date/date",
     "pages/login/login",
-    "pages/logs/logs",
     "plugin/components/hello-component",
-    "plugin/pages/hello-page"
+    "plugin/pages/hello-page",
+    "pages/tree/lifeCycle/lifeCycle",
+    "pages/tree/node/node",
+    "pages/tree/tag/tag",
+    "pages/tree/parents/parents",
+    "pages/tree/video/video",
+    "pages/tree/wx/wx"
   ],
+  "usingComponents": {
+    "van-button": "ui-library/vant-weapp/button/index",
+    "van-tree-select": "ui-library/vant-weapp/tree-select/index"
+  },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
@@ -34,8 +39,8 @@
         "selectedIconPath": "pages/images/selecthome.png"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志",
+        "pagePath": "pages/tree/tree",
+        "text": "分类树",
         "iconPath": "pages/images/log.png",
         "selectedIconPath": "pages/images/selectedLog.png"
       },
@@ -51,5 +56,6 @@
     "request": 10000,
     "downloadFile": 10000
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

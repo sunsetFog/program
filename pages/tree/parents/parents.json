@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "父组件",
+  "usingComponents": {
+    "component-tag-name": "../../../components/main/main"
+  }
+}

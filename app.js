@@ -1,14 +1,7 @@
-//app.js
-// 微信小程序的生命周期函数有2个
-//app生命周期
-// （1）程序启动时，会触发以下2个函数
-// 第一执行onLauch函数——当小程序初始化完成时，会触发 onLaunch（全局只触发一次）
-// 第二执行onShow函数——当小程序启动，或从后台进入前台显示，会触发 onShow
-// （2）当点击“后台”时，会触发以下函数（即程序被转到后台时）
-// onHide函数——当小程序从前台进入后台，会触发 onHide
+// 微信小程序的生命周期函数有3个
 App({
   onLaunch: function() {
-    console.log('App全局生命周期--onLaunch');
+    console.log('App全局初始化');
     //调用API从本地缓存中获取数据
     var logs = wx.getStorageSync('logs') || []
     logs.unshift(Date.now())
@@ -42,19 +35,19 @@ App({
     })
   },
   onShow: function () {
-    console.log("App生命周期函数——onShow函数");
+    console.log("App启动，或从后台进入前台触发");
   },
   onHide: function () {
-    console.log("App生命周期函数——onHide函数");
+    console.log("App启动，或从前台进入后台触发");
   },
   onError: function (msg) {
-    console.log("App生命周期函数——onError函数");
+    console.log("App全局onError");
   },
-//全局方法
-  globalEvent(){
-    console.log('App全局方法的调用');
+//全局方法     调用getApp().demo1()
+  demo1() {
+    console.log('App全局方法');
   },
-//全局用户信息设置在page/index/index里
+//全局用户信息    调用getApp().globalData
   globalData: {
     userInfo: null,
     globalList: {

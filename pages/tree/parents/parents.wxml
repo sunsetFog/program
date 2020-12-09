@@ -1,0 +1,6 @@
+<view>
+  <component-tag-name phones="{{phone}}" bind:isTrigger="getCode">
+     <view slot="before">组件内容slot插槽:name="before"</view>
+     <view slot="after">组件内容slot插槽:name="after"</view>
+  </component-tag-name>
+</view>

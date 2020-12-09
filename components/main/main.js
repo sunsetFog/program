@@ -1,44 +1,80 @@
-// pages/main/main.js
+
 Component({
+  /**
+   * 使用属性
+   */
   options: {
-    multipleSlots: true // 在组件定义时的选项中启用多slot支持
+    multipleSlots: true, // 启用多slot支持
+    addGlobalClass: true // 启用全局样式
   },
   /**
-   * 组件的属性列表
+   * 组件父传子属性列表
    */
   properties: {
-    phones: {// 属性名
-      type: String,// 类型（必填），目前接受的类型包括：String, Number, Boolean, Object, Array, null（表示任意类型）
-      value: 'default value',// 属性初始值（可选），如果未指定则会根据类型选择一个
-      observer: function (newVal, oldVal, changedPath) {
-        // 属性被改变时执行的函数（可选），也可以写成在methods段中定义的方法名字符串, 如：'_propertyChange'
-        // 通常 newVal 就是新设置的数据， oldVal 是旧数据
+    phones: {
+      type: String,// 类型（必填）String, Number, Boolean, Object, Array, null(表示任意类型)
+      value: 'default value',// 默认值
+      observer: function (newVal, oldVal, changedPath) { // 监听改变而触发  newVal新值，oldVal旧值
+
       }
     }
   },
-
   /**
    * 组件的初始数据
    */
   data: {
     text: 'init data',
-    stick: {id: 10,value: '微微一笑很倾城'}
+    stick: { id: 10, value: '微微一笑很倾城' }
   },
-  created(){
-    console.log('component生命周期--created页面节点树时执行');
-  },
-  ready(){
-    console.log('component生命周期--ready获取节点信息');
-  },
-
   /**
-   * 组件的方法列表
+   * 计算属性
+   */
+  computed: {
+    
+  },
+  /**
+   * 监听器
+   */
+  watch: {
+
+  },
+  /**
+   * 组件生命周期
+   */
+  lifetimes: {
+    created() {
+      console.log('component初始数据');
+    },
+    ready() {
+      console.log('component渲染完成');
+    },
+    detached() {
+      console.log('component销毁')
+    },
+    error() {
+      console.log('component抛出错误')
+    }
+  },
+  /**
+   * 组件所在页面的生命周期
+   */
+  pageLifetimes: {
+    show: function () {
+      console.log("页面展示")
+    },
+    hide: function () {
+      console.log("页面隐藏")
+    },
+    resize: function (size) {
+      console.log("页面尺寸变化")
+    }
+  },
+  /**
+   * 方法列表
    */
   methods: {
-    passOn(){
-      console.log('通讯-父传子',this.data.phones);
-      // 通讯-子传父
-      this.triggerEvent('isTrigger',this.data.stick);
+    passOn() {
+      this.triggerEvent('isTrigger',this.data.stick);// vue-$emit-子传父
     }
   }
 })

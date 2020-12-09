@@ -1,0 +1,2 @@
+<!-- <button>生命周期</button> -->
+<van-button type="primary">生命周期</van-button>

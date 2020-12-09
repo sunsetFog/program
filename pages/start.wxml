@@ -5,36 +5,11 @@
 <button type='primary' style='margin-top: 5px;' bindtap='getJson'>request</button>
 
 
-<!-- 容器 -->
-<div>---div----{{text}}</div>
-<span>---span----</span>
-<view>视图容器</view>
-<text>文字</text>
-<!-- 可滚动视图容器 -->
-<scroll-view scroll-y style='width: 100%;height: 60px;'>
-  <view style='width: 100%;height: 50px;background: pink;'></view>
-  <view style='width: 100%;height: 80px;background: orange;'></view>
-</scroll-view>
-<!-- 滑块视图容器 -->
- <swiper indicator-dots indicator-color="gray" indicator-active-color="green" autoplay interval="1500" circular duration='500'>
-  <swiper-item>第一页</swiper-item>
-  <swiper-item>第二页</swiper-item>
-  <swiper-item>第三页</swiper-item>
- </swiper>
-<!-- 图标 -->
-<icon type="success" size="40" color="orange"/>
-<!-- 进度条 -->
-<progress percent="20" show-info stroke-width="12" color="pink" active/>
 
 
-<view>
-  <!-- 以下是对一个自定义组件的引用 -->
-  <component-tag-name inner-text="Some text" phones="{{phone}}" bind:isTrigger="getCode">
-  <!-- 这部分内容将被放置在组件 <slot> 的位置上 -->
-     <!-- <view>这里是插入到组件slot中的内容</view>  -->
 
-    <!-- 多个slot的运用 -->
-     <view slot="before">多个slot的运用</view>
-     <view slot="after">多个slot的运用</view>
-  </component-tag-name>
-</view>
+
+
+
+
+

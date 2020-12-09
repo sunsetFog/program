@@ -1,0 +1,29 @@
+<view class="container">
+  <!-- 
+    默认为 item  index
+    二次嵌套循环用 wx:for-item="val"  wx:for-index="sign"
+  -->
+  <view wx:for="{{for_list}}" wx:key="index">
+    <view>{{item.name}}</view>
+    <view wx:for="{{item.menu}}" wx:for-item="val" wx:for-index="sign" wx:key="sign" class="gift">
+      {{val}}-{{sign}}
+    </view>
+  </view>
+
+  <view>
+    <view wx:if="{{if_air == 1}}">wx:if</view>
+    <view wx:elif="{{if_air == 2}}">wx:elif</view>
+    <view wx:else>wx:else</view>
+  </view>
+
+  <view>
+    <view style="{{style_xh}} {{'background:'+backdrop+';height:40px;'}}">style设置</view>
+    <view style="color:{{dynamic}};font-size:10px;">动态sty</view>
+    <view class="{{active_color?'active-color':''}} {{rainbow}}">class</view>
+    <view class="active-color {{rainbow}}">动态class</view>
+  </view>
+
+  <view bindtap="nice">事件</view>
+  <view catchtap="stop">阻止事件冒泡</view>
+
+</view>

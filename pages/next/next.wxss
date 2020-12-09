@@ -1,4 +1,0 @@
-/* pages/next/next.wxss */
-text{width: 60px;height: 30px;border: 1px solid gray;background: blue;
-display: inline-block;text-align: center;line-height: 30px;margin-left: 10px;}
-.active{color: red}

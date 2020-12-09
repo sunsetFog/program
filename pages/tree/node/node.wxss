@@ -1,0 +1,9 @@
+.gift {
+  margin-left: 40px;
+}
+.active-color {
+  color: chartreuse;
+}
+.rainbow {
+  background: coral;
+}

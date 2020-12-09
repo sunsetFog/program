@@ -112,12 +112,6 @@ audioSrc:'',
   //获取当前位置
   getLocal(){
     var myMap = wx.createMapContext("myMap");
-    wx.getLocation({
-      success: function(res) {
-        console.log("当前的经度："+res.longitude)
-        console.log("当前的纬度："+res.latitude)
-      },
-    })
   },
   //获取全局数据
   getGlobal(){
@@ -175,10 +169,6 @@ audioSrc:'',
    */
   onLoad: function (options) {
     console.log('---zoo---',options);
-    wx.setStorage({
-      key: 'name',
-      data: 'David'
-    })
   },
 
   /**

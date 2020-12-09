@@ -1,6 +1,3 @@
 {
-  "navigationBarTitleText": "我的",
-  "usingComponents": {
-    "component-tag-name": "../components/main/main"
-  }
+  "navigationBarTitleText": "我的"
 }

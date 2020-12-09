@@ -14,7 +14,6 @@
 
 var common = require('../utils/util.js');
 Page({
-
   /**
    * 页面的初始数据
    */
@@ -49,7 +48,7 @@ Page({
     console.log('方法的调用', this.data.phone);
     //调用App全局方法
     var app = getApp();
-    app.globalEvent();
+    app.demo1();
     console.log('暴露公用方法',common.fun.stick());
   },
   //接收通讯方法
